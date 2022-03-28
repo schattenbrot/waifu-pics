@@ -116,9 +116,20 @@ button {
   font-size: 1.25rem;
   background-color: map-get($map: $colors, $key: background-dark);
   text-decoration: none;
-  border: none;
+  border: 2px solid map-get($map: $colors, $key: background-dark);
   padding: 0.5rem 0;
   margin: 0;
+
+  &:hover {
+    border: 2px solid lighten(map-get($map: $colors, $key: background-dark), 40);
+  }
+
+  &:active {
+    background-color: lighten(
+      map-get($map: $colors, $key: background-dark),
+      10
+    );
+  }
 }
 
 #image {

@@ -16,6 +16,7 @@ body {
   grid-template-rows: 4rem 1fr minmax(8rem, min-content);
   grid-template-areas: "header" "main" "footer";
 }
+
 header {
   grid-area: header;
   background-color: #333;
